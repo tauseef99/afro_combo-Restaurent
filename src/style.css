@@ -1,0 +1,179 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: sans-serif;
+  background-color: black;
+  overflow-x: hidden;
+  color: #393636;
+}
+html{
+  overflow-x: hidden;
+}
+/* Target the scrollbar */
+::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+/* Style the track (background of the scrollbar) */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color of the track */
+  border-radius: 10px; /* Rounded corners for the track */
+}
+
+/* Style the handle (scrollbar itself) */
+::-webkit-scrollbar-thumb {
+  background-color: #70af38; /* Color of the scrollbar */
+  border-radius: 10px; /* Rounded corners for the handle */
+  border: 2px solid #f1f1f1; /* Adds a border around the thumb */
+}
+
+/* Hover effect on the handle */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #4b8e10; /* Darker color when hovering */
+}
+
+/* Header styling starts here */
+.header-background {
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.navigation {
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px;
+  transform: translateY(-50%);
+}
+
+.nav-button {
+  background: transparent; /* Semi-transparent background */
+  border: 1px solid white;
+  border-radius: 4px;
+  color: white; /* Icon color */
+  cursor: pointer;
+  backdrop-filter: blur(50px);
+  padding: 10px;
+  transition: background-color 0.3s;
+}
+
+.header-heading {
+  font-family: "Belleza", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+/* Header styling Ends here */
+
+/* work counter styling starts here */
+.work-counter {
+  background-image: url("./Assets//images/WorkCounter-bg.png");
+  min-height: 40vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+  color: white;
+}
+/* work counter styling Ends here */
+
+
+.swiper-home{
+background-color: #272222 !important;
+padding: 0 !important;
+margin: 0 !important;
+}
+.team{
+  background: linear-gradient(135deg, #B3A64D, #FAF3E0);
+
+}
+.pay-input::placeholder{
+color: black;
+}
+
+/* Reservation styling starts here */
+.Reservation {
+  background-image: url("./Assets//images/Headers-bg.png");
+  min-height: 50vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+}
+/* Reservation styling Ends here */
+
+/* responsive for all components for big screens strats here */
+@media only screen and (min-width: 2200px) {
+  .container {
+    width: 2000px;
+    padding: 0%;
+    margin: 2% auto;
+  }
+}
+/* responsive for all components for big screens Ends here */
+
+/* All pages header styling starts here */
+.All-Header {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding-top: 150px;
+  padding-bottom: 50px;
+  background-image: url('./Assets/images/Headers-bg.png');
+}
+/* All pages header styling Ends here */
+
+/* About page styling starts here */
+.Aboutvideo-bg {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("./Assets/images/Headers-bg.png");
+}
+.Aboutafro-content {
+  box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.5);
+}
+/* About page styling Ends here */
+
+.team img {
+  transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out; /* Adjust the duration as needed */
+}
+
+.team:hover img {
+  filter: brightness(1);
+  transform: scale(1.05);
+}
+
+/* testimonial css starts here */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  font-size: 18px;
+  background: linear-gradient(135deg, #B3A64D, #FAF3E0);
+  color: black;
+  padding: 15px;
+  border-radius: 13px;
+  margin-bottom: 50px;
+}
+/* Custom styles for Swiper pagination dots */
+.swiper-pagination-bullet {
+  background-color: white; /* Change the default dot color to white */
+  opacity: 0.7; /* Optional: Set the opacity of the dots */
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #B3A64D; /* Change the active dot color to white */
+  opacity: 1; /* Optional: Fully opaque for active dot */
+}
+
+/* testimonial css Ends here */
+
