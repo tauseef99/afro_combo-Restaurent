@@ -144,7 +144,7 @@ function OurMenu() {
     if (!url) return '/default-image.jpg';
     
     // Handle cases where URL might already be in production format
-    if (url.startsWith('https://api.afrocombo.com/uploads')) {
+    if (url.startsWith('/uploads')) {
       return url;
     }
     
@@ -155,7 +155,7 @@ function OurMenu() {
     
     // Handle relative paths or other cases
     return url.startsWith('/uploads') 
-      ? `https://api.afrocombo.com${url}`
+      ? `${url}`
       : url;
   };
 
@@ -167,7 +167,8 @@ function OurMenu() {
         setError(null);
         
         const response = await axios.get(
-          "https://api.afrocombo.com/api/admin/menu-items", 
+          // "https://api.afrocombo.com/api/admin/menu-items", 
+          "/api/admin/menu-items", 
           {
             withCredentials: true,
             timeout: 5000

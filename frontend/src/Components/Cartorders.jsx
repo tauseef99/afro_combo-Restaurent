@@ -116,7 +116,7 @@ function Cartorders({ cartItems, removeFromCart, addToCart, removeAllFromCart, c
     };
   
     try {
-      const response = await fetch("https://afrocombo.com/api/order", {
+      const response = await fetch("/api/order", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"

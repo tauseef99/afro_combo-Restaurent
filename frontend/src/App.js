@@ -16,7 +16,7 @@ import Cart from "./Pages/Cart";
 import Gallery from "./Pages/Gallery";
 import Scrolltotop from "./Components/Scrolltotop";
 import Loader from "./Components/Loader";
-import BackgroundAudio from "./Components/Backgroundaudio"; 
+// import BackgroundAudio from "./Components/Backgroundaudio"; 
 
 // importing admin panel 
 import AdminLogin from '../src/Pages/Admin/AdminLogin'; 
@@ -45,7 +45,7 @@ function App() {
   return (
     <>
       {loading && <Loader />} {/* Show loader if loading */}
-      <BackgroundAudio isPlaying={!loading} />
+      {/* <BackgroundAudio isPlaying={!loading} /> */}
       <div className="App">
         <Routes>
           <Route path="/" element={<Home />} />

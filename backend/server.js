@@ -3,7 +3,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const uploadRoutes = require("./routes/uploadRoutes");
 
-const cors = require('cors');
+// const cors = require('cors');
 const bodyParser = require('body-parser');
 const connectDB = require('./config/db');
 const adminRoutes = require("./routes/adminRoutes");
@@ -31,7 +31,7 @@ app.use(express.json());
 connectDB();
 
 // Middleware
-app.use(cors());
+// app.use(cors());
 app.use(bodyParser.json());
 app.use(express.json());
 app.use("/api/admin", adminRoutes);
