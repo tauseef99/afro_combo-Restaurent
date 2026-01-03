@@ -3,7 +3,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const uploadRoutes = require("./routes/uploadRoutes");
 
-// const cors = require('cors');
+const cors = require('cors');
 const bodyParser = require('body-parser');
 const connectDB = require('./config/db');
 const adminRoutes = require("./routes/adminRoutes");
@@ -31,7 +31,7 @@ app.use(express.json());
 connectDB();
 
 // Middleware
-// app.use(cors());
+app.use(cors());
 app.use(bodyParser.json());
 app.use(express.json());
 app.use("/api/admin", adminRoutes);
@@ -115,9 +115,9 @@ app.post("/api/contact", async (req, res) => {
   
       // Email to the restaurant owner
      const ownerMailOptions = {
-    from: `"Afro Contact" <${process.env.EMAIL_USER}>`, 
+    from: `"Digi Bite Contact" <${process.env.EMAIL_USER}>`, 
     to: process.env.OWNER_EMAIL, 
-    subject: "👨‍🍳 Message from Afro Client",
+    subject: "👨‍🍳 Message from Digi Bite Client",
     html: `
       <div style="font-family: Arial, sans-serif; line-height: 1.6; color: #333;">
         <h2 style="color: #4CAF50; border-bottom: 2px solid #4CAF50; padding-bottom: 5px;">New Contact Form Submission</h2>
@@ -150,7 +150,7 @@ app.post("/api/contact", async (req, res) => {
   
       // Email to the user as confirmation
       const userMailOptions = {
-        from: `"Afro Restaurant Team" <${process.env.EMAIL_USER}>`,
+        from: `"Digi Bite Restaurant Team" <${process.env.EMAIL_USER}>`,
         to: email, 
         subject: "Thank You for Contacting Us!",
         html: `
@@ -225,7 +225,7 @@ app.post("/api/order", async (req, res) => {
   try {
       // Send order email to owner
       await transporter.sendMail({
-          from: `"Afro Restaurant" <${process.env.EMAIL_USER}>`,
+          from: `"Digi Bite Restaurant" <${process.env.EMAIL_USER}>`,
           to: process.env.OWNER_EMAIL,
           subject: "📦 New Order Received",
           html: emailHtml,
@@ -233,14 +233,14 @@ app.post("/api/order", async (req, res) => {
 
       // Send confirmation email to customer
       await transporter.sendMail({
-          from: `"Afro Restaurant" <${process.env.EMAIL_USER}>`,
+          from: `"Digi Bite Restaurant" <${process.env.EMAIL_USER}>`,
           to: email,  
           subject: "Your Order Confirmation",
           html: `
               <h3>Thank You for Your Order, ${name}!</h3>
               <p>Your order has been received and is being processed.</p>
               <p>We will contact you soon at <strong>${phone}</strong>.</p>
-              <p>Best Regards, Afro Restaurant Team</p>
+              <p>Best Regards, Digi Bite Restaurant Team</p>
           `,
       });
 
@@ -252,6 +252,7 @@ app.post("/api/order", async (req, res) => {
 });
 
 app.post("/api/book-table", async (req, res) => {
+  console.log("hit")
   const { person, date, time, phone } = req.body;
 
   if (!person || !date || !time || !phone) {
@@ -268,14 +269,14 @@ app.post("/api/book-table", async (req, res) => {
           <p style="font-size: 16px; color: #333;"><strong>⏰ Time:</strong> ${time}</p>  
           <p style="font-size: 16px; color: #333;"><strong>📞 Phone:</strong> ${phone}</p>  
       </div>  
-      <p style="text-align: center; font-size: 16px; color: #333;"><strong>Message from Afro Team</strong></p>  
+      <p style="text-align: center; font-size: 16px; color: #333;"><strong>Message from Digi Bite Team</strong></p>  
   </div>`;  
 
 
   try {
     // Send email to restaurant owner
     await transporter.sendMail({
-      from: `"Afro Restaurant" <${process.env.EMAIL_USER}>`,
+      from: `"Digi Bite Restaurant" <${process.env.EMAIL_USER}>`,
       to: process.env.OWNER_EMAIL,
       subject: "🛎️ New Table Booking",
       html: emailHtml,

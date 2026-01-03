@@ -38,20 +38,17 @@ function Aboutafro() {
             About{" "}
             <span className="border-b-2 border-[#4B8E10] ml-2">
               {" "}
-              <span className=" font-bold text-[#B3A54F]">Afro</span>{" "}
-              <span className="text-[#4B8E10] font-bold">Combo</span>
+              <span className="text-[#4B8E10] font-bold">Digi</span>
+              <span className=" font-bold text-[#B3A54F]">bite</span>
             </span>
           </h4>
           <p className="my-6" data-aos="zoom-out-left">
-            Welcome to Afro Combo, located at 14 Market Square, Buckingham MK18
-            1NW, United Kingdom! We bring the vibrant flavors of Africa to
-            Buckingham, offering dine-in, delivery, and takeaway options. At
-            Afro Combo, we serve a delicious variety of African-inspired dishes,
+            Welcome to Digibite Restaurant! We bring the vibrant flavors, offering dine-in, delivery, and takeaway options. At
+            Digibite, we serve a delicious variety of dishes,
             made from fresh ingredients with a perfect mix of traditional and
             modern flavors. Whether you're dining in our cozy restaurant,
             grabbing a quick takeaway, or enjoying delivery, we guarantee a
-            flavorful and memorable experience every time. Join us and discover
-            the true essence of African cuisine right here in Buckingham!
+            flavorful and memorable experience every time.
           </p>
 
           <Link to="/Contact">

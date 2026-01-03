@@ -21,7 +21,7 @@ function Menu() {
       <div className="All-Header Menu-Header flex text-white items-center justify-center text-center">
         <div>
           <h3 className="header-heading font-semibold text-4xl md:text-5xl">
-            AFROCOMBO MENU
+            DIGIBITE MENU
           </h3>
           <p className="py-4 px-2">
             Discover a variety of flavorful dishes crafted with fresh

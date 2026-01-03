@@ -276,7 +276,7 @@ function OurMenu() {
           <hr className="w-10 border-none h-1 bg-[#4B8E10] mx-auto mb-3" />
           <p className="font-semibold text-white text-lg mb-2">OUR MENU</p>
           <h2 className="text-3xl sm:text-4xl md:text-5xl text-white font-bold">
-            DELICIOUS AFRICAN & CARIBBEAN DISHES
+            DELICIOUS DISHES
           </h2>
         </div>
 

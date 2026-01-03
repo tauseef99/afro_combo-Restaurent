@@ -158,7 +158,7 @@ function Cartorders({ cartItems, removeFromCart, addToCart, removeAllFromCart, c
     <div className="border-[#C2B66C] border-2 p-4 lg:p-8 rounded-2xl mt-4 lg:mt-0 w-full shadow-2xl shadow-lg shadow-cyan-black/50">
       <div className="text-white border-2 border-[#C2B66C] p-6 rounded-2xl" >
         <p style={{ color: 'yellow', fontSize: '18px', fontWeight: 'bold' }}>
-          Delivery is available within the Buckingham area not too much far from Buckingham.
+          Delivery is available within Pakistan.
         </p>
         <h4 className="text-2xl font-semibold">Order Summary</h4>
         <p className="py-2">{cartItems.length} Items</p>

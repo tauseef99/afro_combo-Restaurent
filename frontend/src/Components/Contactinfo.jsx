@@ -44,7 +44,7 @@ function Contactinfo() {
     {
       icon: faPhone,
       title: "Call Us",
-      details: ["+44 1280 821920"],
+      details: ["+92301-2345678"],
     },
     {
       icon: faMapMarkerAlt,

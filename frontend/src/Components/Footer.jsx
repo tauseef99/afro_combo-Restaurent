@@ -21,11 +21,9 @@ const moreLinks = [
 
 const socialLinks = [
   {
-    href: "https://www.instagram.com/afrocomborestaurant?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     icon: faInstagram,
   },
   {
-    href: "https://www.facebook.com/profile.php?id=61554349216661",
     icon: faFacebook,
   },
 ];
@@ -50,7 +48,7 @@ function Footer() {
               <img src={Footerimg} className="w-[28]" alt="Footer Logo" />
             </Link>
             <p className="w-[90%]">
-              Thank you for visiting Afro Combo online! We look forward to
+              Thank you for visiting Digibite online! We look forward to
               welcoming you in person for an unforgettable dining experience.
               See you soon!
             </p>
@@ -112,7 +110,7 @@ function Footer() {
       </div>
 
       <div className="subheader text-sm p-[10px] text-center text-[white] bg-[#4B8E10]">
-        <p>Copyright © 2025 afrocombo.com - All Rights Reserved.</p>
+        <p>Copyright © 2025 development team (Group A) - All Rights Reserved.</p>
       </div>
     </>
   );
