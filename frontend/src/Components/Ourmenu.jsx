@@ -150,7 +150,7 @@ function OurMenu() {
     
     // Handle local development URLs
     if (url.startsWith('http://localhost')) {
-      return url.replace('http://localhost:5000/uploads', 'https://api.afrocombo.com/uploads');
+      return url.replace('http://localhost:5000/uploads');
     }
     
     // Handle relative paths or other cases
@@ -167,7 +167,6 @@ function OurMenu() {
         setError(null);
         
         const response = await axios.get(
-          // "https://api.afrocombo.com/api/admin/menu-items", 
           "/api/admin/menu-items", 
           {
             withCredentials: true,
@@ -178,7 +177,7 @@ function OurMenu() {
         if (Array.isArray(response.data)) {
           const transformedData = response.data.map(item => ({
             ...item,
-            img: transformImageUrl(item.img)
+            img: (item.img)
           }));
           setMenuData(transformedData);
         } else {
@@ -252,6 +251,9 @@ function OurMenu() {
     (activeCategory === 'All' || item.category === activeCategory) &&
     item.title.toLowerCase().includes(searchTerm.toLowerCase())
   );
+
+  console.log({filteredItems
+  })
 
   return (
     <div className="bg-black min-h-screen py-10">

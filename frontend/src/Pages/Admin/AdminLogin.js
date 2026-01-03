@@ -17,7 +17,7 @@ const AdminLogin = ({ setAuth }) => {
 
     try {
       const response = await axios.post(
-        "https://afrocombo.com/api/admin/login",
+        "/admin/login",
         { email, password },
         {
           headers: {

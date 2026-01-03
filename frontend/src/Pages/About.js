@@ -8,7 +8,7 @@ import Team from "../Components/Team";
 import Testimonial from "../Components/Testimonial";
 import Chooseus from "../Components/Chooseus";
 import Reservation from "../Components/Reservation";
-import Aboutvideo from "../Components/Aboutvideo";
+// import Aboutvideo from "../Components/Aboutvideo";
 
 function About() {
   // Create a ref for the Aboutinfo component
@@ -40,8 +40,8 @@ function About() {
       <div ref={aboutInfoRef}>
         <Aboutafro />
       </div>
-      <Aboutvideo />
-      <Team />
+      {/* <Aboutvideo /> */}
+      {/* <Team /> */}
       <Chooseus />
       <Testimonial />
       <Reservation />

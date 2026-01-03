@@ -39,7 +39,7 @@ function Contactinfo() {
     {
       icon: faEnvelope,
       title: "Write Us",
-      details: ["info@afrocombo.com", "reservation@afrocombo.com"],
+      details: ["digibite.restaurant@gmail.com"],
     },
     {
       icon: faPhone,
@@ -49,7 +49,7 @@ function Contactinfo() {
     {
       icon: faMapMarkerAlt,
       title: "Visit Us",
-      details: ["14 Market Square, Buckingham MK18 1NW, United Kingdom"],
+      details: ["Main Shahrah-e-Faisal, 22-E, Block 6 P.E.C.H.S, Karachi"],
     },
   ];
 

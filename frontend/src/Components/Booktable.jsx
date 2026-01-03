@@ -76,7 +76,9 @@ function Booktable() {
 
     <p className="text-white">For</p>
 
-    <div className="w-[100%] items-center flex cursor-pointer border-2 border-[black] rounded-sm">
+    {/* <div className="w-[100%] items-center flex cursor-pointer border-2 border-[black] rounded-sm"> */}
+    <div className="sm:w-[100%] w-[240px] items-center flex cursor-pointer border-2 border-[black] rounded-sm">
+      
       <input required type="date" value={date} onChange={handleDateChange} className="w-[100%] h-[35px] pr-2 p-2 outline-none border-r-2 rounded-md team" />
     </div>
 

@@ -56,7 +56,7 @@ const testimonials = [
   {
     id: 5,
     heading: "Dinner",
-    text: "If you are in Buckingham, please visit Afro Combo for your delicious tasting African dishes. You will love every meal they serve.",
+    text: "If you are in Buckingham, please visit Digi Bite for your delicious tasting  ican dishes. You will love every meal they serve.",
     name: "Daria Gavrilova.",
     img: reviewimg3, // Replace with another image.
   },

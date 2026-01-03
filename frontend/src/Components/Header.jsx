@@ -8,14 +8,14 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 // Import your images here
-import Image1 from "../Assets/images/header-img1.jpg";
-import Image2 from "../Assets/images/header-img2.jpg";
-import Image3 from "../Assets/images/header-img3.jpg";
+import Image1 from "../Assets/images/header-1.png";
+import Image2 from "../Assets/images/header-02.png";
+import Image3 from "../Assets/images/header-03.png";
 
 const images = [
   { src: Image1, heading: "Welcome To Digibite" },
-  { src: Image2, heading: "RESERVE YOUR TABLE TODAY" },
-  { src: Image3, heading: "TASTE THE JOY HERE" },
+  { src: Image1, heading: "RESERVE YOUR TABLE TODAY" },
+  { src: Image1, heading: "TASTE THE JOY HERE" },
 ];
 
 function Header() {

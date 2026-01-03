@@ -61,7 +61,7 @@ function Reviewsinfo() {
 
       {/* Second Grid Section */}
 
-      <div className="p-[7%] container grid sm:grid-cols-2 gap-4 container mx-auto">
+      {/* <div className="p-[7%] container grid sm:grid-cols-2 gap-4 container mx-auto">
         <div>
           <img
             src={img4}
@@ -69,9 +69,9 @@ function Reviewsinfo() {
             data-aos="fade-down"
             alt="Customer 3"
           />
-        </div>
+        </div> */}
 
-        <div>
+        {/* <div>
           <img
             src={img5}
             className="h-[350px] sm:h-[250px] lg:h-[400px] w-[100%] object-cover rounded-xl"
@@ -84,8 +84,8 @@ function Reviewsinfo() {
             data-aos="fade-left"
             alt="Customer 2"
           />
-        </div>
-      </div>
+        </div> */}
+      {/* </div> */}
     </div>
   );
 }

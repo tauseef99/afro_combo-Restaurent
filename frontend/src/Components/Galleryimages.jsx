@@ -37,7 +37,7 @@ import img29 from "../Assets/images/gallery-img29.jpg";
 import img30 from "../Assets/images/gallery-img30.jpg";
 import img31 from "../Assets/images/gallery-img31.jpg";
 import img32 from "../Assets/images/gallery-img32.jpg";
-import img33 from "../Assets/images/gallery-img33.jpg";
+// import img33 from "../Assets/images/gallery-img33.jpg";
 import img34 from "../Assets/images/gallery-img34.jpg";
 import img35 from "../Assets/images/gallery-img35.jpg";
 import img36 from "../Assets/images/gallery-img36.jpg";
@@ -46,39 +46,24 @@ import img38 from "../Assets/images/gallery-img38.jpg";
 import img39 from "../Assets/images/gallery-img39.jpg";
 
 const images = [
-  img1,
   img2,
   img3,
   img4,
   img5,
   img6,
-  img7,
-  img8,
-  img9,
-  img10,
-  img11,
-  img12,
-  img13,
-  img14,
-  img15,
   img16,
   img17,
   img18,
   img19,
   img20,
-  img21,
   img22,
-  img23,
   img24,
-  img25,
   img26,
   img27,
   img28,
   img29,
   img30,
-  img31,
   img32,
-  img33,
   img34,
   img35,
   img36,

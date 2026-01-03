@@ -325,15 +325,7 @@ function Cartorders({ cartItems, removeFromCart, addToCart, removeAllFromCart, c
                 className="team shadow w-full rounded-md p-3 outline-none shadow-cyan-black/50 my-2 pay-input"
               />
 
-{/* <button
-  type="button"
-  onClick={() => {
-    toast.info("This ordering system is under construction. Please contact the AfroCombo team directly.");
-  }}
-  className="team ml-auto flex mt-4 py-2 px-3 rounded-lg hover:px-6 duration-300 ease-in-out"
->
-  Confirm Order
-</button> */}
+
 
               <button
                 type="submit" 

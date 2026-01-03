@@ -12,7 +12,7 @@ const teamMembers = [
     name: "Obi",
     role: "Head Chef & Managing Director",
     description:
-      "Dedicated head of Afro Combo and Hardworker and Effective",
+      "Dedicated head of Digi Bite Combo and Hardworker and Effective",
     image: Team1,
   },
   {

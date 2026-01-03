@@ -47,18 +47,11 @@ const AdminDashboard = () => {
   }, [navigate, activeSection]); 
   
   
-  // const fetchMenuItems = async () => {
-  //   try {
-  //     const res = await axios.get("https://afrocombo.com/admin/menu-items");
-  //     setMenuItems(res.data);
-  //   } catch (error) {
-  //     console.error("Error fetching menu items:", error);
-  //   }
-  // };
+
 
   const fetchMenuItems = async () => {
     try {
-      const res = await axios.get("https://afrocombo.com/api/admin/menu-items");
+      const res = await axios.get("/api/admin/menu-items");
       console.log("Fetched menu response:", res.data); // Debug line
       const items = Array.isArray(res.data)
         ? res.data
@@ -75,7 +68,7 @@ const AdminDashboard = () => {
   
   const fetchOrders = async () => {
     try {
-      const res = await axios.get("https://afrocombo.com/api/orders");
+      const res = await axios.get("/orders");
       setOrders(res.data);
     } catch (err) {
       console.error("Error fetching orders:", err);
@@ -91,9 +84,9 @@ const AdminDashboard = () => {
     e.preventDefault();
     try {
       if (editItem) {
-        await axios.put(`https://afrocombo.com/api/menu-item/${editItem._id}`, newItem);
+        await axios.put(`/menu-item/${editItem._id}`, newItem);
       } else {
-        await axios.post("https://afrocombo.com/api/add-menu-item", newItem);
+        await axios.post("/add-menu-item", newItem);
       }
       fetchMenuItems();
       setShowModal(false);
@@ -112,7 +105,7 @@ const AdminDashboard = () => {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`https://afrocombo.com/api/menu-item/${id}`);
+      await axios.delete(`/api/menu-item/${id}`);
       fetchMenuItems();
     } catch (error) {
       console.error("Error deleting menu item:", error);
@@ -124,7 +117,7 @@ const AdminDashboard = () => {
     const formData = new FormData();
     formData.append("image", file);
     try {
-      const res = await axios.post("https://afrocombo.com/api/upload", formData, {
+      const res = await axios.post("/upload", formData, {
         headers: { "Content-Type": "multipart/form-data" },
       });
       setNewItem({ ...newItem, img: res.data.imageUrl });

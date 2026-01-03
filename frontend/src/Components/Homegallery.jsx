@@ -21,13 +21,13 @@ import { EffectCoverflow, Autoplay } from "swiper/modules";
 
 // Array of image data (You can add more images here)
 const galleryImages = [
-  { id: 1, src: img1 },
+  { id: 1, src: img4 },
   { id: 2, src: img2 },
   { id: 3, src: img3 },
   { id: 4, src: img4 },
   { id: 5, src: img5 },
   { id: 6, src: img6 },
-  { id: 7, src: img7 },
+  { id: 7, src: img4 },
   { id: 8, src: img8 },
 ];
 

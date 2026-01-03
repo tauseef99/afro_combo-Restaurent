@@ -1,7 +1,7 @@
 import { React, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
-import Aboutafroimg from "../Assets/images/About-Afro.webp";
+import Aboutafroimg from "../Assets/images/header-02.png";
 import { Link } from "react-router-dom"; // Import useLocation
 
 function Aboutafro() {
